@@ -10,8 +10,7 @@ import java.util.logging.Logger;
 
 public class AppThread extends Thread {
 
-	String pathname = "E:\\Udemy\\J2EE - Concurrency & Multithreading\\ProjectResource\\"
-			+ "Ex_Files_Java_EE_Concurrency\\Exercise Files\\Resources\\sample.txt";
+	String pathname = "./resources/sample.txt";
 	@Override
 	public void run() {
 		try(BufferedReader reader = new BufferedReader(new FileReader(new File(pathname)))) {
